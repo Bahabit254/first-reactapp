@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/card.component';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Card title={"Mr."} name={"Brendan Fraiser"} age={"52"} />
     </div>
   );
 }
