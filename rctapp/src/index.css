@@ -12,11 +12,11 @@ code {
     monospace;
 }
 
-nav {
+.primary-nav {
   background-color: bisque;
 }
 
-nav a {
+.primary-nav, nav a {
   margin-left: 10px;
   text-decoration: none;
   font-weight: bold;
