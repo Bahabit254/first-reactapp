@@ -1,18 +1,19 @@
 import { useNavigate } from "react-router-dom"
-import { useAuth } from "./auths"
+import { useAuth } from "./auth"
 
 
 export const Profile = () => {
-    const auths = useAuth()
+    const auth = useAuth()
     const navigate = useNavigate()
 
     const handleLogout = () => {
-        auths.logout()
+        auth.logout()
         navigate('/')
     }
     return (
         <div>
-            Welcome {auths.user}
+            
+            Welcome {auth.user}
             <button onClick={handleLogout}>Log Out</button>
         </div>
     )
